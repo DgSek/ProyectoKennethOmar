@@ -1,4 +1,3 @@
-// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Bienvenida from './Bienvenida';
@@ -13,7 +12,7 @@ import DetallesEmpleadosU from './DetallesEmpleadosU';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ProyectoKennethOmar"> {/* Añade el basename */}
       <Routes>
         <Route path="/" element={<Bienvenida />} />
         <Route path="/login" element={<Login />} />
@@ -23,7 +22,7 @@ function App() {
         <Route path="/preguntas" element={<PreguntasFrecuentes />} /> 
         <Route path="/agregarEmpleado" element={<AgregarEmpleado />} />
         <Route path="/reporte" element={<Reporte />}/>
-        <Route path="/detallesEmpleadosU" element={<DetallesEmpleadosU />}/>{/* Nueva ruta */}
+        <Route path="/detallesEmpleadosU" element={<DetallesEmpleadosU />}/>
       </Routes>
     </Router>
   );

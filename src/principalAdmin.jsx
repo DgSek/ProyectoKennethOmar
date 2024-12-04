@@ -99,10 +99,10 @@ const PrincipalAdmin = () => {
             <a href="#servicios">SERVICIOS</a>
             {showDropdown && (
               <div className="dropdown-menu">
-                <a href="#agregar-empleado" onClick={() => navigate('/agregarEmpleado')}>
+                <a onClick={() => navigate('/agregarEmpleado')}>
                   Agregar Empleado
                 </a>
-                <a href="#reporte" onClick={() => navigate('/Reporte')}>
+                <a onClick={() => navigate('/Reporte')}>
                   Reporte
                 </a>
               </div>
